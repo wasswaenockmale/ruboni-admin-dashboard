@@ -4,3 +4,10 @@ export interface NavLinkProps {
   name: string
   isActive: boolean;
 }
+
+export interface NavLinkMenuProps{
+  name: string,
+  href: string,
+  isActive: boolean,
+  handleClick: () => void;
+}
