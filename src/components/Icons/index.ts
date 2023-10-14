@@ -8,6 +8,8 @@ import Rooms from "./Rooms";
 import Settings from "./Settings";
 import Support from "./Support";
 import Logout from "./Logout";
+import Booking from "./Booking";
+
 export {
   Users,
   Analytics,
@@ -18,5 +20,6 @@ export {
   Rooms,
   Settings,
   Support,
-  Logout
+  Logout,
+  Booking
 }
