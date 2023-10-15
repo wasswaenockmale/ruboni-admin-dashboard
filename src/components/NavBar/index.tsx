@@ -30,7 +30,7 @@ const Index: React.FC = () => {
   return (
     <div className={`relative flex items-center justify-between h-14 rounded-md border ${showMenu ? "" : "p-2 pl-5 pr-5"}`}>
       <div className="flex justify-between w-full">
-        <div className="flex items-center w-1/4 pl-1 bg-white rounded-md">
+        <div className="items-center hidden pl-1 bg-white rounded-md md:flex lg:w-1/4 md:w-2/5" >
           <BiSearch
             className="w-5 h-5"
           />
@@ -41,12 +41,12 @@ const Index: React.FC = () => {
             placeholder="Search for ..."
           />
         </div>
-        {/* <GrMenu
+        <GrMenu
           className="w-8 h-8 cursor-pointer lg:hidden"
           onClick={handleMenuClick}
-        /> */}
-        <div className="flex justify-between w-1/5 cursor-pointer">
-          <div className="relative w-1/6 p-1 bg-white rounded-md cursor-pointer">
+        />
+        <div className="flex justify-between cursor-pointer lg:w-1/5 md:w-2/6">
+          <div className="relative hidden p-1 bg-white rounded-md cursor-pointer md:flex">
             <span className="absolute w-2 h-2 bg-red-500 rounded-full top-1 right-2 font-roboto"></span>
             <IoNotifications
               className="w-8 h-8 fill-primary-500"
@@ -61,7 +61,7 @@ const Index: React.FC = () => {
                 className="rounded-md"
                 alt="user: image"
               />
-              <div className="font-roboto h-fit ">
+              <div className="hidden font-roboto h-fit md:flex md:flex-col">
                 <h5 className="text-xs">Name</h5>
                 <p className="opacity-50 text-xxs">Administrator</p>
               </div>
