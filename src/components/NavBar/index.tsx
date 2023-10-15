@@ -37,7 +37,7 @@ const Index: React.FC = () => {
           <input
             type="text"
             name="search"
-            className="w-full p-1 pl-5"
+            className="w-full p-1 pl-5 outline-none"
             placeholder="Search for ..."
           />
         </div>
