@@ -7,7 +7,7 @@ const Index: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex w-screen bg-secondary-50">
       <SideBar />
-      <main className="w-full px-1 py-1">
+      <main className="w-full px-3 py-1">
         <NavBar />
         {children}
       </main>
