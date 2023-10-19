@@ -41,7 +41,7 @@ function Index() {
         {
           Array(10).fill(0).map((_item: any, index: number) => (
             <Fragment key={index}>
-              <LatestItemDisplay />
+              <LatestItemDisplay index={index} />
             </Fragment>
           ))
         }
