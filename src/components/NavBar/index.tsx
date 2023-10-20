@@ -66,7 +66,7 @@ const Index: React.FC = () => {
       {/* Profile card  */}
       <ProfileCard
         showCard={showProfileCard}
-        handleCardDisplay={() => { }}
+        handleCardDisplay={handleProfileCard}
       />
     </div>
   );
