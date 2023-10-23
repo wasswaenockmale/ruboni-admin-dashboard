@@ -3,6 +3,7 @@ export interface NavLinkProps {
   icon: any, 
   name: string
   isActive: boolean;
+  collapsed: boolean
 }
 
 export interface NavLinkMenuProps{
