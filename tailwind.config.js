@@ -76,7 +76,8 @@ module.exports = {
         h1: ["32px", { lineHeight: "38.4%" }],
       },
       fontFamily: {
-        roboto:['Roboto', 'sans']
+        poppins: ["var(--font-poppins)"],
+        hind:["var(--font-hind)"]
       }
     },
   },
