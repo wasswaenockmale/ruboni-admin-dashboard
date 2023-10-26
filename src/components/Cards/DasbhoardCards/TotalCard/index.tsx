@@ -8,7 +8,7 @@ function TotalCard({
   count,
 }: TotalCardProps) {
   return (
-    <div className='w-40 h-20 p-1 mt-2 bg-white rounded-lg total-card-container' role='region' aria-label={`Total ${name}`}>
+    <div className='w-full h-20 p-1 mt-2 bg-white rounded-lg total-card-container' role='region' aria-label={`Total ${name}`}>
       <div className='flex flex-col justify-between m-auto total-card-content'>
         <div className='flex items-center justify-between p-2 text-primary-500 total-count'>
           <h1 className='text-h6 total-count-text'>
