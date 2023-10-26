@@ -24,6 +24,7 @@ function NotificationModal({ showNotificationModal, handleShowModal }: Notificat
       document.removeEventListener('click', handleClickOutSideModal);
     }
   }, [showNotificationModal, handleShowModal]);
+  
   return (
     <div
       ref={notificationModalRef as React.RefObject<HTMLDivElement>}
