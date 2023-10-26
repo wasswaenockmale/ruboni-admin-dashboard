@@ -28,87 +28,55 @@ function Index() {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top' as const
+        position: 'top' as const,
+        labels: {
+          font: {
+            size: 9
+          }
+        }
       },
       title: {
         display: false,
         text: 'Sales statistics'
       }
-    }
-  }
+    },
+    scales: {
+
+    },
+    layout: {
+      padding: 1,
+    },
+
+  };
   const datasets = {
     labels,
     datasets: [
       {
-        label: 'Product sales',
+        label: '',
         data: [],
-        backgroundColor: 'red',
-        borderColor: "red",
+        backgroundColor: 'white',
+        borderColor: "white",
       },
       {
-        label: 'Safari sales',
+        label: '',
         data: [],
-        backgroundColor: 'green',
-        borderColor: 'green'
+        backgroundColor: 'white',
+        borderColor: 'white'
       },
       {
-        label: 'Accommodation sales',
+        label: '',
         data: [],
-        backgroundColor: 'grey',
-        borderColor: 'grey',
+        backgroundColor: 'white',
+        borderColor: 'white',
       }
     ]
   };
   
   return (
     <Line
-      options={{
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'top' as const,
-            labels: {
-              font: {
-                size: 9
-              }
-            }
-          },
-          title: {
-            display: false,
-            text: 'Sales statistics'
-          }
-        },
-        scales: {
-        
-        },
-        layout: {
-          padding: 1,
-        },
-        
-      }}
-      data={{
-        labels,
-        datasets: [
-          {
-            label: '',
-            data: [],
-            backgroundColor: 'white',
-            borderColor: "white",
-          },
-          {
-            label: '',
-            data: [],
-            backgroundColor: 'white',
-            borderColor: 'white'
-          },
-          {
-            label: '',
-            data: [],
-            backgroundColor: 'white',
-            borderColor: 'white',
-          }
-        ]
-      }} />
+      options={options}
+      data={datasets}
+    />
   );
 }
 
