@@ -65,7 +65,7 @@ function OrderDetails({orderData, showDetail, handleShowDetail}:OrderDetailsProp
               </thead>
               <tbody>
                 {
-                  orderData.map((_item:any, index: number) => (
+                  Array(0).fill(0).map((_item:any, index: number) => (
                     <tr
                       key={index}
                     >
